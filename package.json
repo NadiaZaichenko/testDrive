@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://NadiaZaichenko.github.io/testDrive/",
   "dependencies": {
+    "@actions/core": "^1.10.1",
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",

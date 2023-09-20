@@ -22,8 +22,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-          
-      - name: Set an output variable
-        run: |
-          $my_output_var = "123"
-          echo "::set-output name=my_output_var::$my_output_var"
+  
