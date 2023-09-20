@@ -23,9 +23,17 @@ export const getNoticeById = createAsyncThunk(
         try {
             const responce = await axios.get(`/adverts/${itemId}`);
             const data = responce.data;
+            console.log(responce)
             return data;
         } catch (error) {
-            return thunkAPI.rejectWithValue(error.message);
+            if (error.response) {
+                console.error('Server Error:', error.response.status);
+                console.error('Error Data:', error.response.data);
+              } else if (error.request) {
+                console.error('Request Error:', error.request);
+              } else {
+                console.error('Error:', error.message);
+              }
         }
     }
 )

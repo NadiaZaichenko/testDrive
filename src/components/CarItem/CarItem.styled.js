@@ -35,7 +35,7 @@ height: 30px;
 
 export const Info = styled.p`
 font-size: 12px;
-color: #474a53;
+color: #12141780;
 `;
 
 export const Wrapper = styled.div`
@@ -79,11 +79,49 @@ left: 0;
 display: flex;
 align-items: center;
 justify-content: center;
-z-index: 999;
+z-index: 990;
 transform: scale(1);
 `;
 
 export const Container = styled.div`
   width: 541px;
   height: 752px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -360px;
+  margin-left: -260px;
+  z-index: 991;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;
+
+export const WrapperPicture = styled.div`
+overflow: hidden;
+width: 469px;
+height: 314px;
+padding-top: 15px;
+`;
+
+export const Picture = styled.img`
+width: 100%;
+height: 100%;
+object-fit: cover;
+border: 1px;
+border-radius: 8px;
+`;
+
+export const Model = styled.p`
+
+`;
+
+export const Description = styled.p`
+
+`;
+export const Accesories = styled.p`
+
+`;
+

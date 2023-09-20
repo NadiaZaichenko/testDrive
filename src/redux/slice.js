@@ -5,7 +5,6 @@ const initialState = {
     items: [],
     isLoading: false,
     notice: {},
-    
 }
 
 export const noticeSlice = createSlice({
