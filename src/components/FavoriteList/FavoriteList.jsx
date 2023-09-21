@@ -7,10 +7,6 @@ const FavoriteList = ({items}) => {
          {items.map((item)=> {
         return <FavoriteItem item={item} key={item.id} />;
       })}
-         {items.lenght === 0 &&
-            <div>
-              <p>Оберіть в каталозі автівку та додайте в улюблені</p>
-            </div>}
       </List>  
    )
 }
