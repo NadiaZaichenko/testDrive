@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { useState} from "react";
 import ModalWindow from "components/Modal/Modal";
 import useLocalStorage from "hook/useLocalStorage";
@@ -51,6 +52,7 @@ console.log(item)
             <ImageWrapper>
             <HeartIcon type="button" key={item.id} onClick={()=> handleFavorite(item.id, item)}>
              <SvgIcon /> </HeartIcon>
+             
             {favoriteItem.map(elem => {
               if(elem.id === item.id){
               return  (<HeartIcon key={item.id} onClick={() => deletefavorite(item.id)}>

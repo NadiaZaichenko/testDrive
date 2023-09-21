@@ -3,7 +3,7 @@ import bg from '../../image/bg.png'
 
 export const Container = styled.div`
 width: 100%;
-height: 100vw;
+height: 120vw;
 `;
 
 export const Wrapper = styled.div`
@@ -45,7 +45,19 @@ font-size: 44px;
 `;
 
 export const ImageContainer = styled.div`
-padding-top: 50px;
+padding-top: 30px;
 display: flex;
 justify-content: space-around;
+`;
+
+export const ContainTextBottom = styled.div`
+margin-top: 40px;
+padding: 100px;
+background-color: #89b5c5;
+`;
+
+export const TextOnBottom = styled.p`
+  color: #fff;
+  font-size: 44px;
+  font-family: Roboto;
 `;

@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { useState} from "react";
 import ModalWindow from "components/Modal/Modal";
 import useLocalStorage from "hook/useLocalStorage";
@@ -11,7 +12,6 @@ import {
     Info, 
     Div,
     Button,
-//    SvgIcon,
     HeartIcon, FavoriteIconBtn
  } from "components/FavoriteItem/Favorite.styled";
 
