@@ -1,99 +1,5 @@
 import styled from '@emotion/styled';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-
-export const Item = styled.li`
-
-`;
-
-export const HeartIcon = styled.button`
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-`;
-
-
-export const ImageWrapper = styled.div`
-width: 274px;
-height: 268px;
-overflow: hidden;
-position: relative;
-`;
-
-export const Image  = styled.img`
-width: 100%;
-height: 100%;
-object-fit: cover;
-border: 1px;
-border-radius: 14px;
-`;
-
-export const Name = styled.p`
-color: #121417;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-`;
-
-export const Price = styled.p`
-color: #121417;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-;`
-
-export const Div = styled.div`
-display: flex;
-justify-content: space-between;
-height: 30px;
-`;
-
-
-export const Info = styled.p`
-font-size: 12px;
-color: #12141780;
-font-weight: 400;
-line-height: 18px;
-`;
-
-export const Wrapper = styled.div`
-width: 274px;
-position: relative;
-padding: 12px 10px 0 10px;
-height: 426px;
-border-radius: 20px;
-background: #FFF;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
-transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-`;
-
-export const Button = styled.button`
-width: 270px;
-padding: 15px 10px;
-border-radius: 12px;
-border: 0;
-background-color: #3470FF;
-color: #fff;
-margin-bottom: 7px;
-font-size: 14px;
-transition: background-color .3s ease-in-out;
-&:hover{
-    background-color: #0B44CD;
-}
-`;
+import CloseIcon from '@mui/icons-material/Close';
 
 export const Modal = styled.div`
 width: 100vw;
@@ -110,6 +16,7 @@ z-index: 990;
 transform: scale(1);
 overflow: auto;
 `;
+
 
 export const Container = styled.div`
   width: 541px;
@@ -181,7 +88,6 @@ line-height: 20px;
 color: #121417;
 `;
 
-
 export const Accesories = styled.p`
 font-size: 12px;
 color: #12141780;
@@ -230,17 +136,21 @@ margin: 24px 0 0 40px;
 export const TelLink = styled.a`
 color: #fff;
 text-decoration: none;
-
 `;
 
-export const SvgIcon = styled(FavoriteBorderIcon)`
-width: 24px;
-height: 24px;
-fill: #fff;
+export const DivClose = styled.div`
+width: 40px;
+height: 40px;
+position: fixed;
+top: 20px;
+right: 400px;
+z-index: 995;
 `;
 
-export const FavoriteIconBtn = styled(FavoriteIcon)`
+
+export const CloseSvg = styled(CloseIcon)`
 width: 24px;
-height: 24px;
-fill: #fff;
+height:24px;
+cursor: pointer;
+fill: #121417;
 `;

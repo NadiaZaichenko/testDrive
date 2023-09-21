@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Button } from './Catalog.styled';
+import { Container, Button } from './Favorites.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllNotices } from "redux/operation";
 import { allNotices, isLoading } from "redux/selectors";
-import CarList from "components/CarList/CarList";
+import FavoriteList from 'components/FavoriteList/FavoriteList';
 import Loader from 'components/Loader/Loader';
 
-const Catalog = () => {
+
+const Favorite = () => {
     const [page, setPage] = useState(1);
     const dispatch = useDispatch();
     const loading = useSelector(isLoading)
@@ -35,7 +36,7 @@ const Catalog = () => {
         {loading && <Loader/>}
         {!loading && (
         <>
-        <CarList items={visibleItems} />
+        <FavoriteList items={visibleItems} />
         {page < Math.ceil(items.length / limitElem) && (
           <Button onClick={onLoadMore}>Load More</Button>
         )}
@@ -44,5 +45,5 @@ const Catalog = () => {
       </Container>
     );
   };
-  
-export default Catalog;
+
+export default Favorite;

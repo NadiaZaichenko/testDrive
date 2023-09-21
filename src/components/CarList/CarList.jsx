@@ -3,11 +3,14 @@ import CarItem from "components/CarItem/CarItem";
 
 const CarList = ({items}) => {
    return (
-      <List>
+         <List>
          {items.map((item)=> {
         return <CarItem item={item} key={item.id} />;
       })}
       </List>
+
+
+      
    )
 }
 
